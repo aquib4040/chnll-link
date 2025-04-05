@@ -4,21 +4,21 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #Recommended
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "0")
-APP_ID = int(os.environ.get("APP_ID", "0"))
-API_HASH = os.environ.get("API_HASH", "0")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7644552445:AAGuO66qTGANJYBEITAxOF8kHyyzYG50Vio")
+APP_ID = int(os.environ.get("APP_ID", "20697474"))
+API_HASH = os.environ.get("API_HASH", "1acf41c146d578a57741ab0760208eb4")
 
 ##---------------------------------------------------------------------------------------------------
 
 #Main 
-OWNER_ID = int(os.environ.get("OWNER_ID", "5090651635"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "5851158054"))
 PORT = os.environ.get("PORT", "8010")
 
 ##---------------------------------------------------------------------------------------------------
 
 #Database
-DB_URI = os.environ.get("DATABASE_URL", "0")
-DB_NAME = os.environ.get("DATABASE_NAME", "links-sharing")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://jetoj55421:8MVPDRNIxwJen7Vf@cluster0.uyyl02b.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_NAME = os.environ.get("DATABASE_NAME", "links")
 
 ##---------------------------------------------------------------------------------------------------
 
@@ -27,7 +27,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "") #No Need keep it blank
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "5090651635").split()):
+    for x in (os.environ.get("ADMINS", "5851158054").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -42,7 +42,7 @@ USER_REPLY_TEXT = None
 
 #Admin == OWNERID
 ADMINS.append(OWNER_ID)
-ADMINS.append(5090651635)
+ADMINS.append(5851158054)
 
 ##---------------------------------------------------------------------------------------------------
 
