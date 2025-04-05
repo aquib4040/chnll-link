@@ -12,7 +12,7 @@ API_HASH = os.environ.get("API_HASH", "1acf41c146d578a57741ab0760208eb4")
 
 #Main 
 OWNER_ID = int(os.environ.get("OWNER_ID", "5851158054"))
-PORT = os.environ.get("PORT", "8010")
+PORT = os.environ.get("PORT", "8080")
 
 ##---------------------------------------------------------------------------------------------------
 
