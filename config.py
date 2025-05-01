@@ -42,7 +42,7 @@ USER_REPLY_TEXT = None
 
 #Admin == OWNERID
 ADMINS.append(OWNER_ID)
-ADMINS.append(5851158054)
+ADMINS.append()
 
 ##---------------------------------------------------------------------------------------------------
 
