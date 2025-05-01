@@ -57,8 +57,7 @@ async def start_command(client: Bot, message: Message):
             button_text = "🛎️ Request to Join" if is_request else "🔗 Join Channel"
             button = InlineKeyboardMarkup([[InlineKeyboardButton(button_text, url=invite.invite_link)]])
 
-            await message.reply_text("Here is your link! Click below to proceed:
-            powerd by @KGN_BOTZ", reply_markup=button)
+            await message.reply_text("Here is your link! Click below to proceed: powerd by @KGN_BOTZ", reply_markup=button)
 
             asyncio.create_task(revoke_invite_after_10_minutes(client, channel_id, invite.invite_link, is_request))
 
