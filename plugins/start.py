@@ -73,7 +73,7 @@ async def start_command(client: Bot, message: Message):
         )
         
         await message.reply_text(
-            "<b><i>Welcome to the advanced links sharing bot.\nWith this bot, you can share links and keep your channels safe from copyright issues</i></b>",
+            "<b><i>Welcome to the advanced links sharing bot. Made By @KGN_BOTZ\nWith this bot, you can share links and keep your channels safe from copyright issues</i></b>",
             reply_markup=inline_buttons
         )
         
