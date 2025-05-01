@@ -11,7 +11,7 @@ API_HASH = os.environ.get("API_HASH", "1acf41c146d578a57741ab0760208eb4")
 ##---------------------------------------------------------------------------------------------------
 
 #Main 
-OWNER_ID = int(os.environ.get("OWNER_ID", "5851158054,1885113059,7176647963"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "5851158054"))
 PORT = os.environ.get("PORT", "8080")
 
 ##---------------------------------------------------------------------------------------------------
@@ -27,7 +27,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "") #No Need keep it blank
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "5851158054 1885113059 7176647963").split()):
+    for x in (os.environ.get("ADMINS", "5851158054").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -42,7 +42,7 @@ USER_REPLY_TEXT = None
 
 #Admin == OWNERID
 ADMINS.append(OWNER_ID)
-ADMINS.append(5851158054,1885113059,7176647963)
+ADMINS.append(5851158054)
 
 ##---------------------------------------------------------------------------------------------------
 
